@@ -361,3 +361,10 @@
   line-height: 24px;
   color: #1d234e;
 }
+
+.footer-menu p > a {
+  text-decoration: none;
+  color: #1d234e;
+  font-size: 18px;
+  font-weight: 300;
+}
