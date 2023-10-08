@@ -1,0 +1,41 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo a {
+  font: 30px;
+  font-weight: 500;
+  margin-left: 3px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav li a {
+  font-size: 15px;
+  color: #1d234e;
+  font-weight: 400;
+}
+.nav-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #1d234e;
+  padding: 4px 10px;
+  border-radius: 10px;
+}

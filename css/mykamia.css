@@ -1,0 +1,240 @@
+/* nav bar css  */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo a {
+  font: 30px;
+  font-weight: 500;
+  margin-left: 3px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+  padding: 15px 0;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav li a {
+  font-size: 15px;
+  color: #1d234e;
+  font-weight: 400;
+}
+.nav-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #1d234e;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+/* kamia hero section   */
+
+.py-6 {
+  padding-top: 8.5rem !important;
+  padding-bottom: 8rem !important;
+}
+
+.kamia-details h3 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.kamia-details p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 28px;
+  letter-spacing: -1%;
+  padding: 15px 0;
+}
+
+.signup-button {
+  padding: 8px 30px;
+  border: 1px solid #ffffff;
+}
+
+/* what my kamia */
+
+.my-kamia {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  padding: 40px 0;
+}
+
+.my-kamia-img {
+  height: 400px;
+}
+.my-kamia-img img {
+  height: 100%;
+}
+
+.my-kamia-details {
+  width: 50%;
+  background-color: #f9f8f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0 15px 15px 0;
+}
+.my-kamia-description {
+  padding: 0 50px;
+}
+
+.my-kamia-description h3 {
+  font-size: 40px;
+  color: #1d234e;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.my-kamia-description p {
+  font-size: 18px;
+  color: #1d234e;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 10px 0;
+}
+
+.fillup-button {
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #1d234e;
+  padding: 8px 30px;
+  background-color: #f9f8f9;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* personalize section  */
+.personalize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 0;
+  padding: 30px 0;
+}
+
+.personalize-img {
+  width: 450px;
+  height: 500px;
+  padding: 20px 0;
+}
+.personalize-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image-area {
+  background-image: url(../images/kamia/gray-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  overflow: hidden;
+}
+
+.personalize-details {
+  width: 50%;
+  padding-left: 10px;
+}
+.personalize-details h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #1d234e;
+  line-height: 40px;
+}
+.personalize-details p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1d234e;
+  line-height: 26px;
+  padding: 8px 0;
+}
+.details {
+  padding: 8px 0;
+}
+.form-button {
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #1d234e;
+  padding: 8px 30px;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* footer section */
+.footer {
+  padding-top: 150px;
+}
+.footer-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1d234e;
+  line-height: 28px;
+  margin-bottom: 14px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  margin-top: 40px;
+}
+
+.footer-links a > i {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #1d234e;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.footer-input {
+  border-radius: 50px;
+  padding: 8px 10px;
+}
+
+.footer-button {
+  margin-left: -40px;
+  border-radius: 50px;
+  background-color: #1d234e;
+  color: #ffffff;
+  border: 0;
+}
+.footer-button i {
+  font-size: 20px;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1d234e;
+}

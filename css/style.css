@@ -1,0 +1,271 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo a {
+  font: 30px;
+  font-weight: 500;
+  margin-left: 3px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+  padding: 15px 0;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav li a {
+  font-size: 15px;
+  color: #1d234e;
+  font-weight: 400;
+}
+.nav-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #1d234e;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+.home-buy-header {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.home-buy-header h2 {
+  font-size: 30px;
+  color: #1d234e;
+  font-weight: 500;
+}
+.home-buy-header p {
+  font-size: 18px;
+  color: #1d234e;
+  font-weight: 400;
+}
+
+.button_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.input-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.bi-search {
+  position: absolute;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #1d234e;
+}
+
+.top-input {
+  width: 240px;
+  height: 40px;
+  padding: 6px;
+  padding-left: 38px;
+  border-width: 1px;
+  border-color: #1d234e;
+  border-radius: 12px;
+}
+
+.buy {
+  width: 58px;
+  height: 40px;
+  border-radius: 10px 0 0 10px;
+  border-width: 1px;
+  border-color: #1d234e;
+  background-color: #1d234e;
+  font-size: 14px;
+}
+.buy:hover {
+  background-color: #1d234e;
+  color: white;
+}
+.rent {
+  width: 58px;
+  height: 40px;
+  border-radius: 0 10px 10px 0;
+  border-width: 1px;
+  border-left: 0;
+  border-color: #1d234e;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  margin-right: 8px;
+}
+.rent:hover {
+  background-color: white;
+  color: black;
+  border-color: #1d234e;
+}
+
+.custom-button-home {
+  width: 145px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #1d234e;
+  color: black;
+  font-size: 14px;
+  margin-right: 8px;
+}
+.custom-button-home:hover {
+  background-color: white;
+  color: black;
+  border-color: #1d234e;
+}
+.bi-chevron-down {
+  margin-left: 8px;
+  color: black;
+  font-weight: bold;
+}
+
+.custom-button-price {
+  width: 125px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #1d234e;
+  color: black;
+  font-size: 14px;
+  margin-right: 8px;
+}
+.custom-button-price:hover {
+  background-color: white;
+  color: black;
+  border-color: #1d234e;
+}
+
+.custom-button {
+  width: 115px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #1d234e;
+  color: black;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.custom-button:hover {
+  background-color: white;
+  color: black;
+  border-color: #1d234e;
+}
+
+.custom-button-alert {
+  width: 145px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d234e;
+  color: white;
+  border-radius: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-size: 16px;
+  border-width: 1px;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.bi-filter {
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+.bi-bell {
+  color: white;
+  margin-right: 6px;
+}
+
+.list-btn {
+  height: 40px;
+  background-color: white;
+  color: black;
+  border: 0;
+}
+.list-btn:hover {
+  background-color: white;
+  border: 0;
+}
+.map-btn {
+  height: 40px;
+  background-color: white;
+  color: gray;
+  border: 0;
+}
+.map-btn:hover {
+  background-color: white;
+  border: 0;
+}
+
+.default-product-order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.default-product-order div p {
+  color: #1d234e;
+  font-size: 14px;
+}
+
+.default-order-button {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 14px;
+  line-height: 29px;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}

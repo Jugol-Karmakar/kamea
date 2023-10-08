@@ -1,0 +1,322 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo a {
+  font: 30px;
+  font-weight: 500;
+  margin-left: 3px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+  padding: 15px 0;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav li a {
+  font-size: 15px;
+  color: #1d234e;
+  font-weight: 400;
+}
+.nav-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #1d234e;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+/* remax hero  */
+.remax-hero img {
+  width: 100%;
+  height: 100%;
+}
+
+.remax {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: -80px;
+}
+
+.remax-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remax-card-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remax-card-img {
+  width: 124px;
+  height: 130px;
+  margin-right: 8px;
+}
+.remax-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remax-card-description {
+  padding-left: 10px;
+}
+.remax-card-description h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #1d234e;
+  margin-bottom: 0;
+  line-height: 32px;
+}
+
+.remax-card-location a {
+  text-decoration: none;
+  color: #145bc7;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.remax-card-location i {
+  color: #145bc7;
+  font-size: 18px;
+}
+
+.remax-contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.remax-contact-details a {
+  text-decoration: none;
+  color: #1d234e;
+  font-size: 14px;
+  font-weight: 400;
+}
+.remax-contact-details i {
+  color: #1d234e;
+  font-size: 16px;
+  padding-right: 8px;
+}
+
+/* remax appartment sell  */
+.tab-content {
+  padding: 10px 0px 10px;
+}
+
+.nav-tabs {
+  border: 1px solid #e5e5e9;
+  border-radius: 12px 12px 0 0;
+}
+
+.nav-tabs a {
+  width: 100%;
+  border: 0 !important;
+  background-color: transparent !important;
+  text-decoration: none;
+  color: #19191a;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.nav-tabs li.active {
+  border-bottom: 2px solid #1d234e;
+  color: #1d234e;
+}
+.nav-tabs li {
+  border-bottom: 2px solid transparent;
+}
+
+ul.nav.nav-tabs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.nav-tabs li {
+  flex-basis: 150px;
+  min-width: 90px;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 !important;
+}
+
+/* appertment-section */
+.appertment-card {
+  border-radius: 12px;
+}
+.appertment-img {
+  border-radius: 12px 0 0 12px;
+  overflow: hidden;
+}
+
+.appertment-card-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.apartment-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+}
+
+.appertment-contact a {
+  text-decoration: none;
+  color: #1d234e;
+  font-size: 15px;
+  font-weight: 400;
+}
+.appertment-contact i {
+  color: #1d234e;
+  font-size: 15px;
+  margin-right: 4px;
+}
+
+.apartments-link {
+  display: flex;
+  align-items: center;
+}
+
+.apartments-link a {
+  color: #1d234e;
+}
+.apartments-link a:nth-child(1) {
+  margin-right: 10px;
+}
+
+.appertment-title {
+  font-size: 16px;
+  color: #1d234e;
+  line-height: 24px;
+}
+
+.appertment-money1 {
+  font-size: 23px;
+  font-weight: 500;
+  margin-right: 8px;
+  color: #1d234e;
+}
+.appertment-money2 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 8px;
+  color: #d62f2f;
+  text-decoration: line-through;
+}
+.appertment-money3 p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #d62f2f;
+}
+.appertment-money3 i {
+  font-size: 14px;
+  color: #d62f2f;
+}
+
+.appertment-bdr {
+  font-size: 15px;
+  color: #1d234e;
+}
+.apartment-intro {
+  color: #1d234e;
+}
+
+/* appartment filter section  */
+.filter-section {
+  padding: 40px 0;
+}
+
+.filter-heading {
+  font-size: 25px;
+  font-weight: 500;
+  color: #1d234e;
+  padding-bottom: 20px;
+}
+
+.appertment-filter-name {
+  font-size: 18px;
+  color: #1d234e;
+  line-height: 24px;
+}
+
+/* pagintation */
+
+/* footer section */
+.footer {
+  padding-top: 150px;
+}
+.footer-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1d234e;
+  line-height: 28px;
+  margin-bottom: 14px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  margin-top: 40px;
+}
+
+.footer-links a > i {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #1d234e;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.footer-input {
+  border-radius: 50px;
+  padding: 8px 10px;
+}
+
+.footer-button {
+  margin-left: -40px;
+  border-radius: 50px;
+  background-color: #1d234e;
+  color: #ffffff;
+  border: 0;
+}
+.footer-button i {
+  font-size: 20px;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1d234e;
+}

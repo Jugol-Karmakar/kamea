@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Project</title>
+    <!-- css link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- style css link  -->
+    <link rel="stylesheet" href="css/mission.css" />
+
+    <!-- bootstrap icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- header section  -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+      <div class="container">
+        <div class="logo">
+          <img src="/images/logo.png" class="logo-img" alt="" />
+          <a class="navbar-brand" href="#">Kamea</a>
+        </div>
+        <button
+          class="navbar-toggler ps-0"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="d-flex justify-content-start align-items-center">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">Our services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">Exceptional properties </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">My Kemea </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link px-3" href="#!">About us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link px-3 nav-button" href="#!"> Publish an ad </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link px-3 nav-button" href="#!">Se conector</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main  section-->
+    <main>
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-5 bg-success p-4">
+            <div><img src="/images/mission1.png" alt="" /></div>
+          </div>
+          <div class="col-6 bg-warning p-4">
+            <div class="row g-3">
+              <div class="col-6 p-2" style="width: 311px; height: 231px">
+                <img src="/images/mission2.png" alt="" />
+              </div>
+              <div class="col-6 p-2" style="width: 311px; height: 231px">
+                <img src="/images/mission3.png" alt="" />
+              </div>
+              <div class="col-6 p-2">
+                <img src="/images/mission4.png" alt="" />
+              </div>
+              <div class="col-6 p-2">
+                <img src="/images/mission5.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div id="exTab2">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="panel-title">
+                    <ul class="nav nav-tabs">
+                      <li class="active">
+                        <a href="#1" data-toggle="tab">Description</a>
+                      </li>
+                      <li><a href="#2" data-toggle="tab">Finance</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="panel-body">
+                  <!-- tab 1 content  -->
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="1">
+                      <h4>Cottage - 23 Eliezer Yaffe Street, Ra'anana</h4>
+                      <div class="main-feature">
+                        <div class="feature">
+                          <img src="/images/home-icon.png" alt="home-image" />
+                          <p>530 m<sup>2</sup></p>
+                        </div>
+                        <div class="feature">
+                          <img src="/images/bed-icon.png" alt="bed-image" />
+                          <p>7 Rooms</p>
+                        </div>
+                        <div class="feature">
+                          <img src="/images/shower-icon.png" alt="shower-img" />
+                          <p>3 Floors</p>
+                        </div>
+                        <div class="feature">
+                          <img src="/images/car-icon.png" alt="car-img" />
+                          <p>Parkings</p>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="description">
+                        <h4>Description</h4>
+                        <div class="description-details">
+                          <p>
+                            Apartment currently in T2 configuration to be
+                            renovated in T3 furnished, located on the 5th and
+                            last floor of a building in Marseille of 8 units in
+                            good condition.
+                          </p>
+                          <p>
+                            The apartment is composed of an entrance, a living
+                            room, a kitchen, a bedroom, a shower room, a toilet
+                            and a balcony.
+                          </p>
+                          <p>
+                            Ideally located in the St Victor district next to
+                            the Old Port, the Abbey, the Fort St Nicolas and
+                            close to all amenities.
+                          </p>
+                          <p>
+                            The monthly rent of this apartment is 1 100 €
+                            including charges. <br />
+                            Possibility LCD; 140 € in average the night on
+                            Airbnb.
+                          </p>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="about-property">
+                        <h4>About this poperty</h4>
+                        <div class="about">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="about-items">
+                                <p>Type of propery</p>
+                                <p>Cottage</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="about-items">
+                                <p>Number of floors</p>
+                                <p>5</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="about-items">
+                                <p>Total surface</p>
+                                <p>530 m<sup>2</sup></p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="about-items">
+                                <p>Propery condition</p>
+                                <p>Revovated</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="about-items">
+                                <p>Number of rooms</p>
+                                <p>5</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="about-items">
+                                <p>Entry of date</p>
+                                <p>01/12/23</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="about-items">
+                                <p>City</p>
+                                <p>Ra'anana</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="about-items">
+                                <p>Ra'anana</p>
+                                <p>1</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="about-items">
+                                <p>Entry condition</p>
+                                <p>Flexible</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="about-items">
+                                <p>Address</p>
+                                <p>23 Eliezer Yaffe Street</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="about-items">
+                                <p>Ground/covered car park</p>
+                                <p>2</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="about-items">
+                                <p>Price</p>
+                                <p>22 700 000 ₪</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="about-items">
+                                <p>Area</p>
+                                <p>South</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="about-items">
+                                <p>Surface build</p>
+                                <p>330 m<sup>2</sup></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="house-main-feature">
+                        <h4>What this house offers</h4>
+                        <div class="house-feature">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="house-feature-item">
+                                <img
+                                  src="/images/elevator-icon.png"
+                                  alt="home-image"
+                                />
+                                <p>Elevators</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="house-feature-item">
+                                <img
+                                  src="/images/painting-roller-icon.png"
+                                  alt="home-image"
+                                />
+                                <p>Renovated</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="house-feature-item">
+                                <img
+                                  src="/images/storage-box-icon.png"
+                                  alt="home-image"
+                                />
+                                <p>Storage</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="house-feature-item">
+                                <img
+                                  src="/images/furniture-icon.png"
+                                  alt="home-image"
+                                />
+                                <p>Furnitures included</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="house-feature-item">
+                                <img
+                                  src="/images/water-tap-icon.png"
+                                  alt="home-image"
+                                />
+                                <p>Kosher kitchen</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="house-feature-item">
+                                <img
+                                  src="/images/water-heater-icon.png"
+                                  alt="home-image"
+                                />
+                                <p>Water heater</p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="house-feature-item">
+                                <img
+                                  src="/images/personal-icon.png"
+                                  alt="home-image"
+                                />
+                                <p>Personal Mazgan</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                    </div>
+                    <!-- tab 2 content  -->
+                    <div class="tab-pane" id="2">
+                      <h4>Cottage - 23 Eliezer Yaffe Street, Ra'anana</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow border-0">
+              <div class="card-body p-4">
+                <h5 class="card-title">22 700 000 ₪</h5>
+                <hr />
+                <div class="remax">
+                  <img src="/images/remax.png" alt="remax-img" />
+                  <h5>RE/MAX Agency</h5>
+                </div>
+                <div>
+                  <div class="card-intro">
+                    <p>Good morning,</p>
+                    <p>
+                      I would like more information about this property. Please
+                      contact me for this.
+                    </p>
+                    <p>Cordially</p>
+                  </div>
+                  <div>
+                    <form>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control input"
+                          placeholder="Name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control input"
+                          placeholder="Email"
+                        />
+                      </div>
+                      <button type="submit" class="submit-button">Send</button>
+                    </form>
+                    <div class="number-button">
+                      <button type="submit" class="show-number-button">
+                        Show phone number
+                      </button>
+                      <div class="office-link">
+                        <a href="">To the office website</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location">
+          <h4>Where is this property located</h4>
+          <!--Google map-->
+          <div
+            id="map-container-google-2"
+            class="container map-container"
+            style="height: 500px"
+          >
+            <iframe
+              src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer section  -->
+    <footer></footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- bootstrap js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Project</title>
+    <!-- css link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- style css link  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- bootstrap icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- header section  -->
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+      <div class="container">
+        <div class="logo">
+          <img src="/images/logo.png" class="logo-img" alt="" />
+          <a class="navbar-brand" href="#">Kamea</a>
+        </div>
+        <button
+          class="navbar-toggler ps-0"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="d-flex justify-content-start align-items-center">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">Our services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">Exceptional properties </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">My Kemea </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">About us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link px-3 nav-button" href="#!"> Publish an ad </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link px-3 nav-button" href="#!">Se conector</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main  section-->
+    <main>
+      <div class="container">
+        <div>
+          <div class="home-buy-header">
+            <h2>Find the right property, right away</h2>
+            <p>
+              Kamea supports your property research in Israel at every stage
+            </p>
+          </div>
+
+          <div class="button_group">
+            <div class="input-search">
+              <i class="bi bi-search"></i>
+              <input
+                class="form-control me-2 top-input"
+                type="search"
+                placeholder="In What City ?"
+              />
+            </div>
+            <div class="d-flex">
+              <button type="button" class="btn btn-primary buy">Buy</button>
+              <button type="button" class="btn btn-primary rent">Rent</button>
+            </div>
+            <button
+              type="button"
+              class="btn btn-outline-secondary custom-button-home"
+            >
+              Home Type <i class="bi bi-chevron-down"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary custom-button-price"
+            >
+              Price range <i class="bi bi-chevron-down"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary custom-button"
+            >
+              New projects
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary custom-button"
+            >
+              <i class="bi bi-filter"></i>All filters
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary custom-button-alert"
+            >
+              <i class="bi bi-bell"></i>Add an alert
+            </button>
+
+            <div class="d-flex">
+              <button type="button" class="btn list-btn">List</button>
+              <button type="button" class="btn map-btn">Map</button>
+            </div>
+          </div>
+          <div class="default-product-order">
+            <div>
+              <p class="mb-0">1 - 8 out of 2000</p>
+            </div>
+            <div>
+              <button type=" button" class="default-order-button">
+                Default order <i class="bi bi-chevron-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="row row-gap-3">
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card border-0">
+                <img src="/images/home1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cottage - Eliezer Yaffe St.</h5>
+                  <p class="card-text mb-1">Ra'anana, Israël</p>
+                  <p class="mb-0 pb-2">
+                    150 m<sup>2</sup> - 3 rooms - 1 parking
+                  </p>
+                  <p class="mb-2">22 700 000</p>
+                  <a href="#" class="text-decoration-underline text-black"
+                    >Show phone number</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card border-0">
+                <img src="/images/home2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cottage - Eliezer Yaffe St.</h5>
+                  <p class="card-text mb-1">Ra'anana, Israël</p>
+                  <p class="mb-0 pb-2">
+                    150 m<sup>2</sup> - 3 rooms - 1 parking
+                  </p>
+                  <p class="mb-2">22 700 000</p>
+                  <a href="#" class="text-decoration-underline text-black"
+                    >Show phone number</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card border-0">
+                <img src="/images/home3.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cottage - Eliezer Yaffe St.</h5>
+                  <p class="card-text mb-1">Ra'anana, Israël</p>
+                  <p class="mb-0 pb-2">
+                    150 m<sup>2</sup> - 3 rooms - 1 parking
+                  </p>
+                  <p class="mb-2">22 700 000</p>
+                  <a href="#" class="text-decoration-underline text-black"
+                    >Show phone number</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card border-0">
+                <img src="/images/home4.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cottage - Eliezer Yaffe St.</h5>
+                  <p class="card-text mb-1">Ra'anana, Israël</p>
+                  <p class="mb-0 pb-2">
+                    150 m<sup>2</sup> - 3 rooms - 1 parking
+                  </p>
+                  <p class="mb-2">22 700 000</p>
+                  <a href="#" class="text-decoration-underline text-black"
+                    >Show phone number</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card border-0">
+                <img src="/images/home5.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cottage - Eliezer Yaffe St.</h5>
+                  <p class="card-text mb-1">Ra'anana, Israël</p>
+                  <p class="mb-0 pb-2">
+                    150 m<sup>2</sup> - 3 rooms - 1 parking
+                  </p>
+                  <p class="mb-2">22 700 000</p>
+                  <a href="#" class="text-decoration-underline text-black"
+                    >Show phone number</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card border-0">
+                <img src="/images/home1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cottage - Eliezer Yaffe St.</h5>
+                  <p class="card-text mb-1">Ra'anana, Israël</p>
+                  <p class="mb-0 pb-2">
+                    150 m<sup>2</sup> - 3 rooms - 1 parking
+                  </p>
+                  <p class="mb-2">22 700 000</p>
+                  <a href="#" class="text-decoration-underline text-black"
+                    >Show phone number</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card border-0">
+                <img src="/images/home7.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cottage - Eliezer Yaffe St.</h5>
+                  <p class="card-text mb-1">Ra'anana, Israël</p>
+                  <p class="mb-0 pb-2">
+                    150 m<sup>2</sup> - 3 rooms - 1 parking
+                  </p>
+                  <p class="mb-2">22 700 000</p>
+                  <a href="#" class="text-decoration-underline text-black"
+                    >Show phone number</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card border-0">
+                <img src="/images/home1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cottage - Eliezer Yaffe St.</h5>
+                  <p class="card-text mb-1">Ra'anana, Israël</p>
+                  <p class="mb-0 pb-2">
+                    150 m<sup>2</sup> - 3 rooms - 1 parking
+                  </p>
+                  <p class="mb-2">22 700 000</p>
+                  <a href="#" class="text-decoration-underline text-black"
+                    >Show phone number</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card border-0">
+                <img src="/images/home1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cottage - Eliezer Yaffe St.</h5>
+                  <p class="card-text mb-1">Ra'anana, Israël</p>
+                  <p class="mb-0 pb-2">
+                    150 m<sup>2</sup> - 3 rooms - 1 parking
+                  </p>
+                  <p class="mb-2">22 700 000</p>
+                  <a href="#" class="text-decoration-underline text-black"
+                    >Show phone number</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card border-0">
+                <img src="/images/home2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cottage - Eliezer Yaffe St.</h5>
+                  <p class="card-text mb-1">Ra'anana, Israël</p>
+                  <p class="mb-0 pb-2">
+                    150 m<sup>2</sup> - 3 rooms - 1 parking
+                  </p>
+                  <p class="mb-2">22 700 000</p>
+                  <a href="#" class="text-decoration-underline text-black"
+                    >Show phone number</a
+                  >
+                </div>
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card border-0">
+                <img src="/images/home3.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cottage - Eliezer Yaffe St.</h5>
+                  <p class="card-text mb-1">Ra'anana, Israël</p>
+                  <p class="mb-0 pb-2">
+                    150 m<sup>2</sup> - 3 rooms - 1 parking
+                  </p>
+                  <p class="mb-2">22 700 000</p>
+                  <a href="#" class="text-decoration-underline text-black"
+                    >Show phone number</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card border-0">
+                <img src="/images/home4.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cottage - Eliezer Yaffe St.</h5>
+                  <p class="card-text mb-1">Ra'anana, Israël</p>
+                  <p class="mb-0 pb-2">
+                    150 m<sup>2</sup> - 3 rooms - 1 parking
+                  </p>
+                  <p class="mb-2">22 700 000</p>
+                  <a href="#" class="text-decoration-underline text-black"
+                    >Show phone number</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer section  -->
+    <footer></footer>
+
+    <!-- bootstrap js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

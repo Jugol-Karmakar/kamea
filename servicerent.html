@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Project</title>
+    <!-- css link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- style css link  -->
+    <link rel="stylesheet" href="css/servicerent.css" />
+
+    <!-- bootstrap icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- flag cloud link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  </head>
+  <body>
+    <!-- header section  -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+      <div class="container">
+        <div class="logo">
+          <img src="/images/logo.png" class="logo-img" alt="" />
+          <a class="navbar-brand" href="#">Kamea</a>
+        </div>
+        <button
+          class="navbar-toggler ps-0"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="d-flex justify-content-start align-items-center">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">Our services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">Exceptional properties </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">My Kemea </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#!">About us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link px-3 nav-button" href="#!"> Publish an ad </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link px-3 nav-button" href="#!">Se conector</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main  section-->
+    <main>
+      <section>
+        <div class="container">
+          <div class="row g-5 rent-hero">
+            <div class="col-md-7 rent-hero-description">
+              <h2>
+                Are you owners and <br />
+                want to rent your home ?
+              </h2>
+              <p>
+                Answer a form with some quick questions and we will get back to
+                you in a brief delay
+              </p>
+              <button class="btn btn-primary get-started-btn">
+                Get Started <i class="bi bi-chevron-right"></i>
+              </button>
+              <div class="hero-watch">
+                <p><i class="bi bi-stopwatch"></i>takes less than a minute</p>
+              </div>
+            </div>
+            <div class="col-md-5 rent-hero-img">
+              <img src="/images/rent-sell/rent.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row rent-section">
+            <div class="col-md-6">
+              <form class="row gy-4 gx-5">
+                <div class="col-md-6">
+                  <label for="inputtext1" class="form-label rent-label"
+                    >Where is it located ?*</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputtext1"
+                    placeholder="Tel aviv"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputtext2" class="form-label rent-label"
+                    >What type of property is it?*</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputtext2"
+                    placeholder="Tel aviv"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputtext3" class="form-label rent-label"
+                    >Surface*</label
+                  >
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      id="inputtext3"
+                      class="form-control"
+                      placeholder="000000"
+                      aria-label="Recipient's username"
+                      aria-describedby="basic-addon2"
+                    />
+                    <span class="input-group-text" id="basic-addon2"
+                      >m<sup>2</sup></span
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputtext4" class="form-label rent-label"
+                    >How many rooms?*</label
+                  >
+                  <select
+                    class="form-select"
+                    id="inputtext4"
+                    aria-label="Default select example"
+                  >
+                    <option selected>0</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <label for="inputtext5" class="form-label rent-label"
+                    >What is the desired rent?*</label
+                  >
+
+                  <div class="money-sign">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputtext5"
+                      placeholder="0"
+                      class="money-sign-input"
+                    />
+                    <img
+                      class="money-sign-img"
+                      src="/images/rent-sell/money-sign.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12 rent-button-group">
+                  <button type="button" class="back-button">
+                    <i class="bi bi-chevron-left"></i>Back
+                  </button>
+                  <button type="button" class="next-button">
+                    Next <i class="bi bi-chevron-right"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-5 rent-img">
+              <img src="/images/rent-sell/rent.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row rent-section">
+            <div class="col-md-6">
+              <form class="row gy-4 gx-5">
+                <div class="col-md-6">
+                  <label for="inputtext1" class="form-label rent-label"
+                    >What is your name?*</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputtext1"
+                    placeholder="Tel aviv"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputtext2" class="form-label rent-label"
+                    >And your last name?*</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputtext2"
+                    placeholder="Tel aviv"
+                  />
+                </div>
+
+                <div class="col-md-12">
+                  <label for="inputtext5" class="form-label rent-label"
+                    >What is your e-mail?*</label
+                  >
+                  <div class="money-sign">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputtext5"
+                      placeholder="johndoe@gmail.com"
+                    />
+                    <img
+                      class="money-sign-img"
+                      src="/images/rent-sell/money-sign.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="phone" class="form-label rent-label"
+                    >What is your phone number?*</label
+                  >
+
+                  <input
+                    class="form-control country-code"
+                    id="phone"
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                  />
+                </div>
+
+                <div class="col-md-12 rent-button-group">
+                  <button type="button" class="back-button">
+                    <i class="bi bi-chevron-left"></i>Back
+                  </button>
+                  <button type="button" class="send-button">
+                    Send <i class="bi bi-chevron-right"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-5 rent-img">
+              <img src="/images/rent-sell/rent.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer class=""></footer>
+
+    <!-- bootstrap js link -->
+
+    <!-- country code  -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
+</html>
