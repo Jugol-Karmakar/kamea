@@ -249,6 +249,10 @@ ul.nav.nav-tabs {
   padding: 40px 0;
 }
 
+.fliter-card {
+  border-radius: 12px;
+}
+
 .filter-heading {
   font-size: 25px;
   font-weight: 500;
@@ -260,6 +264,20 @@ ul.nav.nav-tabs {
   font-size: 18px;
   color: #1d234e;
   line-height: 24px;
+}
+
+.form-check input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.form-check .form-check-label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1d234e;
+  margin-bottom: 8px;
+  padding-left: 6px;
+  cursor: pointer;
 }
 
 /* pagintation */
