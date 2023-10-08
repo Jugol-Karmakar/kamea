@@ -11,20 +11,26 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
     <!-- style css link  -->
-    <link rel="stylesheet" href="css/remax.css" />
+    <link rel="stylesheet" href="css/seervicesell.css" />
 
     <!-- bootstrap icon link  -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
+
+    <!-- flag cloud link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   </head>
   <body>
     <!-- header section  -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-light">
-      <div class="container navbar">
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+      <div class="container">
         <div class="logo">
           <img src="/images/logo.png" class="logo-img" alt="" />
           <a class="navbar-brand" href="#">Kamea</a>
@@ -75,1188 +81,199 @@
     <!-- main  section-->
     <main>
       <section>
-        <div class="remax-hero">
-          <img src="/images/remax/remax-hero.png" alt="" />
-        </div>
         <div class="container">
-          <div class="card shadow-sm border-0 px-5 py-3 remax">
-            <div class="card-body p-0 remax-card">
-              <div class="remax-card-details">
-                <div class="remax-card-img">
-                  <img src="/images/remax.png" alt="" />
-                </div>
-                <div class="remax-card-description">
-                  <h3>RE/MAX Ra'annna</h3>
-                  <div class="d-flex align-items-center py-2">
-                    <p class="mb-0">152 Properties·</p>
-                    <p class="mb-0 ms-2">Member since 2023</p>
-                  </div>
-                  <div class="remax-card-location">
-                    <i class="bi bi-geo-alt-fill"></i>
-                    <a href="">Ahuza St 70, Ra'anana</a>
-                  </div>
-                </div>
+          <div class="row g-5 rent-hero">
+            <div class="col-md-7 rent-hero-description">
+              <h2>
+                Are you owners and <br />
+                want to sell your home ?
+              </h2>
+              <p>
+                Answer a form with some quick questions and we will get back to
+                you in a brief delay
+              </p>
+              <button class="btn btn-primary get-started-btn">
+                Get Started <i class="bi bi-chevron-right"></i>
+              </button>
+              <div class="hero-watch">
+                <p><i class="bi bi-stopwatch"></i>takes less than a minute</p>
               </div>
-              <div class="remax-contact-info">
-                <div class="remax-contact-details mb-2">
-                  <i class="bi bi-box-arrow-up-right"></i>
-                  <a href="">See their website</a>
+            </div>
+            <div class="col-md-5 rent-hero-img">
+              <img src="/images/rent-sell/sell.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row rent-section">
+            <div class="col-md-6">
+              <form class="row gy-4 gx-5">
+                <div class="col-md-6">
+                  <label for="inputtext1" class="form-label rent-label"
+                    >Where is it located ?*</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputtext1"
+                    placeholder="Tel aviv"
+                  />
                 </div>
-                <div class="remax-contact-details mb-2">
-                  <i class="bi bi-telephone-fill"></i>
-                  <a href="">Show phone number</a>
+                <div class="col-md-6">
+                  <label for="inputtext2" class="form-label rent-label"
+                    >What type of property is it?*</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputtext2"
+                    placeholder="Tel aviv"
+                  />
                 </div>
-                <button type="button" class="btn btn-primary">Contact</button>
-              </div>
+                <div class="col-md-6">
+                  <label for="inputtext3" class="form-label rent-label"
+                    >Surface*</label
+                  >
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      id="inputtext3"
+                      class="form-control"
+                      placeholder="000000"
+                      aria-label="Recipient's username"
+                      aria-describedby="basic-addon2"
+                    />
+                    <span class="input-group-text" id="basic-addon2"
+                      >m<sup>2</sup></span
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputtext4" class="form-label rent-label"
+                    >How many rooms?*</label
+                  >
+                  <select
+                    class="form-select"
+                    id="inputtext4"
+                    aria-label="Default select example"
+                  >
+                    <option selected>0</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <label for="inputtext5" class="form-label rent-label"
+                    >What is the desired rent?*</label
+                  >
+
+                  <div class="money-sign">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputtext5"
+                      placeholder="0"
+                      class="money-sign-input"
+                    />
+                    <img
+                      class="money-sign-img"
+                      src="/images/rent-sell/money-sign.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12 rent-button-group">
+                  <button type="button" class="back-button">
+                    <i class="bi bi-chevron-left"></i>Back
+                  </button>
+                  <button type="button" class="next-button">
+                    Next <i class="bi bi-chevron-right"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-5 rent-img">
+              <img src="/images/rent-sell/sell.png" alt="" />
             </div>
           </div>
         </div>
       </section>
 
       <section>
-        <div class="container filter-section">
-          <h3 class="filter-heading">
-            RE/MAX Ra'anana : 87 houses and apartments for sale
-          </h3>
-          <div class="row g-4">
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body p-4">
-                  <h3 class="appertment-filter-name">Kind of property</h3>
-                  <div>
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected>Houses, apartments</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                  <h3 class="appertment-filter-name">Price</h3>
-                  <div class="d-flex">
-                    <select
-                      class="form-select me-2"
-                      aria-label="Default select example"
-                    >
-                      <option selected>Min</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    <select
-                      class="form-select ms-2"
-                      aria-label="Default select example"
-                    >
-                      <option selected>Max</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                  <h3 class="appertment-filter-name">Surface</h3>
-                  <div class="d-flex">
-                    <select
-                      class="form-select me-2"
-                      aria-label="Default select example"
-                    >
-                      <option selected>Min</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    <select
-                      class="form-select ms-2"
-                      aria-label="Default select example"
-                    >
-                      <option selected>Max</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                  <h3 class="appertment-filter-name">Housing type</h3>
-                  <div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input rounded-0"
-                        type="checkbox"
-                        value=""
-                        id="defaultCheck1"
-                      />
-                      <label class="form-check-label" for="defaultCheck1">
-                        Apartments, penthouses and duplex
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input rounded-0"
-                        type="checkbox"
-                        value=""
-                        id="defaultCheck1"
-                      />
-                      <label class="form-check-label" for="defaultCheck1">
-                        Houses and villas
-                      </label>
-                    </div>
-                  </div>
-                  <h3 class="appertment-filter-name">Others name</h3>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Small appertment
-                    </label>
-                  </div>
-                  <h3 class="appertment-filter-name">Bed rooms</h3>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      0 bedroom (studios)
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      1
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      2
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      3
-                    </label>
-                  </div>
-                  <h3 class="appertment-filter-name">Bath rooms</h3>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      1
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      2
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      3 bathrooms or more
-                    </label>
-                  </div>
-                  <h3 class="appertment-filter-name">state</h3>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      New property
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      In good condition
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      To renovate
-                    </label>
-                  </div>
-                  <h3 class="appertment-filter-name">Features</h3>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Air conditioner
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Built-in wardrobes
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Elevator
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      On the street
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Parking
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Garden
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Swimming pool
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Terrace
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Storeroom
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Accessible housing
-                    </label>
-                  </div>
-                  <h3 class="appertment-filter-name">Floor</h3>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Last floor
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Intermediate floors
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Ground floor
-                    </label>
-                  </div>
-                  <h3 class="appertment-filter-name">Multimedias</h3>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      With plan
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      With virtual tour
-                    </label>
-                  </div>
-                  <h3 class="appertment-filter-name">Type of add</h3>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      From banks
-                    </label>
-                  </div>
-                  <h3 class="appertment-filter-name">Publication date</h3>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Indifferent
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      In the last 58 hours
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Last week
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input rounded-0"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      The last month
-                    </label>
-                  </div>
+        <div class="container">
+          <div class="row rent-section">
+            <div class="col-md-6">
+              <form class="row gy-4 gx-5">
+                <div class="col-md-6">
+                  <label for="inputtext1" class="form-label rent-label"
+                    >What is your name?*</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputtext1"
+                    placeholder="Tel aviv"
+                  />
                 </div>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div id="exTab2">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      <ul class="nav nav-tabs">
-                        <li class="active">
-                          <a href="#1" data-toggle="tab">Buy</a>
-                        </li>
-                        <li><a href="#2" data-toggle="tab">Rent</a></li>
-                        <li>
-                          <a href="#3" data-toggle="tab">New Properties</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                <div class="col-md-6">
+                  <label for="inputtext2" class="form-label rent-label"
+                    >And your last name?*</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputtext2"
+                    placeholder="Tel aviv"
+                  />
+                </div>
 
-                  <div class="panel-body">
-                    <!-- tab 1 content  -->
-                    <div class="tab-content">
-                      <div class="tab-pane active" id="1">
-                        <div class="card border mb-4 appertment-card">
-                          <div class="row g-0">
-                            <div class="col-md-4">
-                              <div
-                                id="carouselExampleAutoplaying"
-                                class="carousel slide"
-                                data-bs-ride="carousel"
-                              >
-                                <div class="carousel-inner">
-                                  <div
-                                    class="carousel-item active appertment-img"
-                                  >
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                  <div class="carousel-item appertment-img">
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                  <div class="carousel-item appertment-img">
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                </div>
-                                <button
-                                  class="carousel-control-prev"
-                                  type="button"
-                                  data-bs-target="#carouselExampleAutoplaying"
-                                  data-bs-slide="prev"
-                                >
-                                  <span
-                                    class="carousel-control-prev-icon"
-                                    aria-hidden="true"
-                                  ></span>
-                                  <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button
-                                  class="carousel-control-next"
-                                  type="button"
-                                  data-bs-target="#carouselExampleAutoplaying"
-                                  data-bs-slide="next"
-                                >
-                                  <span
-                                    class="carousel-control-next-icon"
-                                    aria-hidden="true"
-                                  ></span>
-                                  <span class="visually-hidden">Next</span>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="col-md-8 appertment-card-detail">
-                              <div class="card-body">
-                                <h5 class="card-title appertment-title">
-                                  Detached house or villa - calle Marquesa de
-                                  Zenete, Ayora
-                                </h5>
-                                <div class="d-flex align-items-center">
-                                  <p class="mb-0 appertment-money1">73 000 ₪</p>
-                                  <p class="mb-0 appertment-money2">76 000 ₪</p>
-                                  <div
-                                    class="d-flex align-items-center ms-1 appertment-money3"
-                                  >
-                                    <i class="bi bi-arrow-down"></i>
-                                    <p class="mb-0">4%</p>
-                                  </div>
-                                </div>
-                                <p class="card-text mb-0 appertment-bdr">
-                                  <small class="">5 bdr.</small>
-                                  <small class="ms-2">250 m<sup>2</sup></small>
-                                </p>
-                                <p class="mb-0 py-2 apartment-intro">
-                                  Beautiful and spacious townhouse in a building
-                                  of 2 houses, to reform, with many
-                                  possibilities, located in one of the main and
-                                  widest streets
-                                </p>
-                              </div>
-                              <div
-                                class="card-footer bg-white apartment-footer"
-                              >
-                                <div class="d-flex align-items-center">
-                                  <div class="appertment-contact me-3">
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <a href="">See the phone number</a>
-                                  </div>
-                                  <div class="appertment-contact">
-                                    <i class="bi bi-chat-right-text-fill"></i>
-                                    <a href="">Contact</a>
-                                  </div>
-                                </div>
-                                <div class="apartments-link">
-                                  <a href=""><i class="bi bi-heart"></i></a>
-                                  <a href=""
-                                    ><i class="bi bi-box-arrow-up"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card border mb-4 appertment-card">
-                          <div class="row g-0">
-                            <div class="col-md-4">
-                              <div
-                                id="carouselExampleAutoplaying"
-                                class="carousel slide"
-                                data-bs-ride="carousel"
-                              >
-                                <div class="carousel-inner">
-                                  <div
-                                    class="carousel-item active appertment-img"
-                                  >
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                  <div class="carousel-item appertment-img">
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                  <div class="carousel-item appertment-img">
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                </div>
-                                <button
-                                  class="carousel-control-prev"
-                                  type="button"
-                                  data-bs-target="#carouselExampleAutoplaying"
-                                  data-bs-slide="prev"
-                                >
-                                  <span
-                                    class="carousel-control-prev-icon"
-                                    aria-hidden="true"
-                                  ></span>
-                                  <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button
-                                  class="carousel-control-next"
-                                  type="button"
-                                  data-bs-target="#carouselExampleAutoplaying"
-                                  data-bs-slide="next"
-                                >
-                                  <span
-                                    class="carousel-control-next-icon"
-                                    aria-hidden="true"
-                                  ></span>
-                                  <span class="visually-hidden">Next</span>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="col-md-8 appertment-card-detail">
-                              <div class="card-body">
-                                <h5 class="card-title appertment-title">
-                                  Detached house or villa - calle Marquesa de
-                                  Zenete, Ayora
-                                </h5>
-                                <div class="d-flex align-items-center">
-                                  <p class="mb-0 appertment-money1">73 000 ₪</p>
-                                  <p class="mb-0 appertment-money2">76 000 ₪</p>
-                                  <div
-                                    class="d-flex align-items-center ms-1 appertment-money3"
-                                  >
-                                    <i class="bi bi-arrow-down"></i>
-                                    <p class="mb-0">4%</p>
-                                  </div>
-                                </div>
-                                <p class="card-text mb-0 appertment-bdr">
-                                  <small class="">5 bdr.</small>
-                                  <small class="ms-2">250 m<sup>2</sup></small>
-                                </p>
-                                <p class="mb-0 py-2 apartment-intro">
-                                  Beautiful and spacious townhouse in a building
-                                  of 2 houses, to reform, with many
-                                  possibilities, located in one of the main and
-                                  widest streets
-                                </p>
-                              </div>
-                              <div
-                                class="card-footer bg-white apartment-footer"
-                              >
-                                <div class="d-flex align-items-center">
-                                  <div class="appertment-contact me-3">
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <a href="">See the phone number</a>
-                                  </div>
-                                  <div class="appertment-contact">
-                                    <i class="bi bi-chat-right-text-fill"></i>
-                                    <a href="">Contact</a>
-                                  </div>
-                                </div>
-                                <div class="apartments-link">
-                                  <a href=""><i class="bi bi-heart"></i></a>
-                                  <a href=""
-                                    ><i class="bi bi-box-arrow-up"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card border mb-4 appertment-card">
-                          <div class="row g-0">
-                            <div class="col-md-4">
-                              <div
-                                id="carouselExampleAutoplaying"
-                                class="carousel slide"
-                                data-bs-ride="carousel"
-                              >
-                                <div class="carousel-inner">
-                                  <div
-                                    class="carousel-item active appertment-img"
-                                  >
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                  <div class="carousel-item appertment-img">
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                  <div class="carousel-item appertment-img">
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                </div>
-                                <button
-                                  class="carousel-control-prev"
-                                  type="button"
-                                  data-bs-target="#carouselExampleAutoplaying"
-                                  data-bs-slide="prev"
-                                >
-                                  <span
-                                    class="carousel-control-prev-icon"
-                                    aria-hidden="true"
-                                  ></span>
-                                  <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button
-                                  class="carousel-control-next"
-                                  type="button"
-                                  data-bs-target="#carouselExampleAutoplaying"
-                                  data-bs-slide="next"
-                                >
-                                  <span
-                                    class="carousel-control-next-icon"
-                                    aria-hidden="true"
-                                  ></span>
-                                  <span class="visually-hidden">Next</span>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="col-md-8 appertment-card-detail">
-                              <div class="card-body">
-                                <h5 class="card-title appertment-title">
-                                  Detached house or villa - calle Marquesa de
-                                  Zenete, Ayora
-                                </h5>
-                                <div class="d-flex align-items-center">
-                                  <p class="mb-0 appertment-money1">73 000 ₪</p>
-                                  <p class="mb-0 appertment-money2">76 000 ₪</p>
-                                  <div
-                                    class="d-flex align-items-center ms-1 appertment-money3"
-                                  >
-                                    <i class="bi bi-arrow-down"></i>
-                                    <p class="mb-0">4%</p>
-                                  </div>
-                                </div>
-                                <p class="card-text mb-0 appertment-bdr">
-                                  <small class="">5 bdr.</small>
-                                  <small class="ms-2">250 m<sup>2</sup></small>
-                                </p>
-                                <p class="mb-0 py-2 apartment-intro">
-                                  Beautiful and spacious townhouse in a building
-                                  of 2 houses, to reform, with many
-                                  possibilities, located in one of the main and
-                                  widest streets
-                                </p>
-                              </div>
-                              <div
-                                class="card-footer bg-white apartment-footer"
-                              >
-                                <div class="d-flex align-items-center">
-                                  <div class="appertment-contact me-3">
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <a href="">See the phone number</a>
-                                  </div>
-                                  <div class="appertment-contact">
-                                    <i class="bi bi-chat-right-text-fill"></i>
-                                    <a href="">Contact</a>
-                                  </div>
-                                </div>
-                                <div class="apartments-link">
-                                  <a href=""><i class="bi bi-heart"></i></a>
-                                  <a href=""
-                                    ><i class="bi bi-box-arrow-up"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card border mb-4 appertment-card">
-                          <div class="row g-0">
-                            <div class="col-md-4">
-                              <div
-                                id="carouselExampleAutoplaying"
-                                class="carousel slide"
-                                data-bs-ride="carousel"
-                              >
-                                <div class="carousel-inner">
-                                  <div
-                                    class="carousel-item active appertment-img"
-                                  >
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                  <div class="carousel-item appertment-img">
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                  <div class="carousel-item appertment-img">
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                </div>
-                                <button
-                                  class="carousel-control-prev"
-                                  type="button"
-                                  data-bs-target="#carouselExampleAutoplaying"
-                                  data-bs-slide="prev"
-                                >
-                                  <span
-                                    class="carousel-control-prev-icon"
-                                    aria-hidden="true"
-                                  ></span>
-                                  <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button
-                                  class="carousel-control-next"
-                                  type="button"
-                                  data-bs-target="#carouselExampleAutoplaying"
-                                  data-bs-slide="next"
-                                >
-                                  <span
-                                    class="carousel-control-next-icon"
-                                    aria-hidden="true"
-                                  ></span>
-                                  <span class="visually-hidden">Next</span>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="col-md-8 appertment-card-detail">
-                              <div class="card-body">
-                                <h5 class="card-title appertment-title">
-                                  Detached house or villa - calle Marquesa de
-                                  Zenete, Ayora
-                                </h5>
-                                <div class="d-flex align-items-center">
-                                  <p class="mb-0 appertment-money1">73 000 ₪</p>
-                                  <p class="mb-0 appertment-money2">76 000 ₪</p>
-                                  <div
-                                    class="d-flex align-items-center ms-1 appertment-money3"
-                                  >
-                                    <i class="bi bi-arrow-down"></i>
-                                    <p class="mb-0">4%</p>
-                                  </div>
-                                </div>
-                                <p class="card-text mb-0 appertment-bdr">
-                                  <small class="">5 bdr.</small>
-                                  <small class="ms-2">250 m<sup>2</sup></small>
-                                </p>
-                                <p class="mb-0 py-2 apartment-intro">
-                                  Beautiful and spacious townhouse in a building
-                                  of 2 houses, to reform, with many
-                                  possibilities, located in one of the main and
-                                  widest streets
-                                </p>
-                              </div>
-                              <div
-                                class="card-footer bg-white apartment-footer"
-                              >
-                                <div class="d-flex align-items-center">
-                                  <div class="appertment-contact me-3">
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <a href="">See the phone number</a>
-                                  </div>
-                                  <div class="appertment-contact">
-                                    <i class="bi bi-chat-right-text-fill"></i>
-                                    <a href="">Contact</a>
-                                  </div>
-                                </div>
-                                <div class="apartments-link">
-                                  <a href=""><i class="bi bi-heart"></i></a>
-                                  <a href=""
-                                    ><i class="bi bi-box-arrow-up"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card border mb-4 appertment-card">
-                          <div class="row g-0">
-                            <div class="col-md-4">
-                              <div
-                                id="carouselExampleAutoplaying"
-                                class="carousel slide"
-                                data-bs-ride="carousel"
-                              >
-                                <div class="carousel-inner">
-                                  <div
-                                    class="carousel-item active appertment-img"
-                                  >
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                  <div class="carousel-item appertment-img">
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                  <div class="carousel-item appertment-img">
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                </div>
-                                <button
-                                  class="carousel-control-prev"
-                                  type="button"
-                                  data-bs-target="#carouselExampleAutoplaying"
-                                  data-bs-slide="prev"
-                                >
-                                  <span
-                                    class="carousel-control-prev-icon"
-                                    aria-hidden="true"
-                                  ></span>
-                                  <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button
-                                  class="carousel-control-next"
-                                  type="button"
-                                  data-bs-target="#carouselExampleAutoplaying"
-                                  data-bs-slide="next"
-                                >
-                                  <span
-                                    class="carousel-control-next-icon"
-                                    aria-hidden="true"
-                                  ></span>
-                                  <span class="visually-hidden">Next</span>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="col-md-8 appertment-card-detail">
-                              <div class="card-body">
-                                <h5 class="card-title appertment-title">
-                                  Detached house or villa - calle Marquesa de
-                                  Zenete, Ayora
-                                </h5>
-                                <div class="d-flex align-items-center">
-                                  <p class="mb-0 appertment-money1">73 000 ₪</p>
-                                  <p class="mb-0 appertment-money2">76 000 ₪</p>
-                                  <div
-                                    class="d-flex align-items-center ms-1 appertment-money3"
-                                  >
-                                    <i class="bi bi-arrow-down"></i>
-                                    <p class="mb-0">4%</p>
-                                  </div>
-                                </div>
-                                <p class="card-text mb-0 appertment-bdr">
-                                  <small class="">5 bdr.</small>
-                                  <small class="ms-2">250 m<sup>2</sup></small>
-                                </p>
-                                <p class="mb-0 py-2 apartment-intro">
-                                  Beautiful and spacious townhouse in a building
-                                  of 2 houses, to reform, with many
-                                  possibilities, located in one of the main and
-                                  widest streets
-                                </p>
-                              </div>
-                              <div
-                                class="card-footer bg-white apartment-footer"
-                              >
-                                <div class="d-flex align-items-center">
-                                  <div class="appertment-contact me-3">
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <a href="">See the phone number</a>
-                                  </div>
-                                  <div class="appertment-contact">
-                                    <i class="bi bi-chat-right-text-fill"></i>
-                                    <a href="">Contact</a>
-                                  </div>
-                                </div>
-                                <div class="apartments-link">
-                                  <a href=""><i class="bi bi-heart"></i></a>
-                                  <a href=""
-                                    ><i class="bi bi-box-arrow-up"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card border mb-4 appertment-card">
-                          <div class="row g-0">
-                            <div class="col-md-4">
-                              <div
-                                id="carouselExampleAutoplaying"
-                                class="carousel slide"
-                                data-bs-ride="carousel"
-                              >
-                                <div class="carousel-inner">
-                                  <div
-                                    class="carousel-item active appertment-img"
-                                  >
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                  <div class="carousel-item appertment-img">
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                  <div class="carousel-item appertment-img">
-                                    <img
-                                      src="/images/remax/appertment-img.png"
-                                      class=""
-                                      alt="..."
-                                    />
-                                  </div>
-                                </div>
-                                <button
-                                  class="carousel-control-prev"
-                                  type="button"
-                                  data-bs-target="#carouselExampleAutoplaying"
-                                  data-bs-slide="prev"
-                                >
-                                  <span
-                                    class="carousel-control-prev-icon"
-                                    aria-hidden="true"
-                                  ></span>
-                                  <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button
-                                  class="carousel-control-next"
-                                  type="button"
-                                  data-bs-target="#carouselExampleAutoplaying"
-                                  data-bs-slide="next"
-                                >
-                                  <span
-                                    class="carousel-control-next-icon"
-                                    aria-hidden="true"
-                                  ></span>
-                                  <span class="visually-hidden">Next</span>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="col-md-8 appertment-card-detail">
-                              <div class="card-body">
-                                <h5 class="card-title appertment-title">
-                                  Detached house or villa - calle Marquesa de
-                                  Zenete, Ayora
-                                </h5>
-                                <div class="d-flex align-items-center">
-                                  <p class="mb-0 appertment-money1">73 000 ₪</p>
-                                  <p class="mb-0 appertment-money2">76 000 ₪</p>
-                                  <div
-                                    class="d-flex align-items-center ms-1 appertment-money3"
-                                  >
-                                    <i class="bi bi-arrow-down"></i>
-                                    <p class="mb-0">4%</p>
-                                  </div>
-                                </div>
-                                <p class="card-text mb-0 appertment-bdr">
-                                  <small class="">5 bdr.</small>
-                                  <small class="ms-2">250 m<sup>2</sup></small>
-                                </p>
-                                <p class="mb-0 py-2 apartment-intro">
-                                  Beautiful and spacious townhouse in a building
-                                  of 2 houses, to reform, with many
-                                  possibilities, located in one of the main and
-                                  widest streets
-                                </p>
-                              </div>
-                              <div
-                                class="card-footer bg-white apartment-footer"
-                              >
-                                <div class="d-flex align-items-center">
-                                  <div class="appertment-contact me-3">
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <a href="">See the phone number</a>
-                                  </div>
-                                  <div class="appertment-contact">
-                                    <i class="bi bi-chat-right-text-fill"></i>
-                                    <a href="">Contact</a>
-                                  </div>
-                                </div>
-                                <div class="apartments-link">
-                                  <a href=""><i class="bi bi-heart"></i></a>
-                                  <a href=""
-                                    ><i class="bi bi-box-arrow-up"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- tab 2 content  -->
-                      <div class="tab-pane" id="2">
-                        <h4>Cottage - 23 Eliezer Yaffe Street, Ra'anana 2</h4>
-                      </div>
-                      <!-- tab 3 content  -->
-                      <div class="tab-pane" id="3">
-                        <h4>Cottage - 23 Eliezer Yaffe Street, Ra'anana 3</h4>
-                      </div>
-                    </div>
-                    <nav aria-label="Page navigation example">
-                      <ul
-                        class="pagination pagination-circle justify-content-center"
-                      >
-                        <li class="page-item">
-                          <a class="page-link" href="#">1</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">3</a>
-                        </li>
-                      </ul>
-                    </nav>
+                <div class="col-md-12">
+                  <label for="inputtext5" class="form-label rent-label"
+                    >What is your e-mail?*</label
+                  >
+                  <div class="money-sign">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputtext5"
+                      placeholder="johndoe@gmail.com"
+                    />
+                    <img
+                      class="money-sign-img"
+                      src="/images/rent-sell/money-sign.png"
+                      alt=""
+                    />
                   </div>
                 </div>
-              </div>
+                <div class="col-md-12">
+                  <label for="phone" class="form-label rent-label"
+                    >What is your phone number?*</label
+                  >
+
+                  <input
+                    class="form-control country-code"
+                    id="phone"
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                  />
+                </div>
+
+                <div class="col-md-12 rent-button-group">
+                  <button type="button" class="back-button">
+                    <i class="bi bi-chevron-left"></i>Back
+                  </button>
+                  <button type="button" class="send-button">
+                    Send <i class="bi bi-chevron-right"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-5 rent-img">
+              <img src="/images/rent-sell/sell.png" alt="" />
             </div>
           </div>
         </div>
@@ -1264,9 +281,9 @@
     </main>
 
     <!-- footer section  -->
-    <footer class="">
+    <footer>
       <section
-        class=""
+        class="footer"
         style="
           background-image: url(/images/kamia/footer-bg.png);
           background-size: cover;
@@ -1278,65 +295,74 @@
           <!-- Grid row -->
           <div class="row mt-3">
             <!-- Grid column -->
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6">
               <!-- Content -->
-              <h3 class="text-uppercase fw-bold mb-4">
-                Subscribe to our newsletter
-              </h3>
-              <div class="form-outline footer-form">
-                <input
-                  type="text"
-                  id="form1"
-                  class="form-control footer-input"
-                />
-                <button type="button" class="footer-button">
-                  <i class="bi bi-arrow-right-short"></i>
-                </button>
+              <h3 class="footer-title">Subscribe to our newsletter</h3>
+              <div class="">
+                <div class="form-outline footer-form">
+                  <input
+                    type="text"
+                    id="form1"
+                    class="form-control footer-input"
+                    placeholder="Your email"
+                  />
+                  <button type="button" class="footer-button">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </button>
+                </div>
+                <div class="footer-links">
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
               </div>
             </div>
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3 footer-menu">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <h6 class="footer-title">Services</h6>
               <p>
-                <a href="#!" class="text-reset">Angular</a>
+                <a href="#!" class="text-reset">Buy</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">React</a>
+                <a href="#!" class="text-reset">Rent</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Vue</a>
+                <a href="#!" class="text-reset">Sell</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Laravel</a>
+                <a href="#!" class="text-reset">My kamea</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Kamea pro</a>
               </p>
             </div>
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3 footer-menu">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <h6 class="footer-title">Legal</h6>
               <p>
-                <a href="#!" class="text-reset">Pricing</a>
+                <a href="#!" class="text-reset">Terms of Service</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Settings</a>
+                <a href="#!" class="text-reset">Privacy Policy</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Orders</a>
+                <a href="#!" class="text-reset">Cookies Policy</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Help</a>
+                <a href="#!" class="text-reset">Legal Notice</a>
               </p>
             </div>
             <!-- Grid column -->
           </div>
           <!-- Grid row -->
-          <hr />
-          <div class="text-left p-4">
+          <hr class="footer-hr" />
+          <div class="text-left pb-4">
             <div class="footer-logo">
               <img src="/images/logo.png" alt="logo" />
               <a href="">© kemea 2023</a>
@@ -1346,14 +372,19 @@
       </section>
     </footer>
 
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!-- bootstrap js link -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
   </body>
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
 </html>

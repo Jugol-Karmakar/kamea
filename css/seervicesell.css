@@ -13,6 +13,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #dddddd;
+  padding: 15px 0;
 }
 
 .navbar-collapse {
@@ -38,4 +40,208 @@
   border: 1px solid #1d234e;
   padding: 4px 10px;
   border-radius: 10px;
+}
+
+/* rent hero section  */
+
+.rent-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0;
+}
+
+.rent-hero-description h2 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #1d234e;
+  line-height: 60px;
+}
+.rent-hero-description p {
+  font-size: 25px;
+  font-weight: 400;
+  color: #1d234e;
+  line-height: 36px;
+  padding: 10px 0;
+}
+
+.get-started-btn {
+  padding: 8px 25px;
+  border-radius: 10px;
+}
+
+.hero-watch p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1d234e;
+}
+.hero-watch i {
+  font-size: 14px;
+  margin-right: 5px;
+  color: #1d234e;
+}
+
+.rent-hero-img {
+  width: 465px;
+  height: 500px;
+  padding: 0;
+}
+.rent-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* buy rent section  */
+.rent-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  margin-top: 15px;
+}
+.rent-img {
+  width: 465px;
+  height: 500px;
+  padding: 0;
+}
+.rent-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.rent-button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.back-button {
+  padding: 6px 25px;
+  border: 1px solid #1d234e;
+  font-size: 19px;
+  font-weight: 400;
+  color: #1d234e;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.back-button i {
+  color: #1d234e;
+  font-size: 19px;
+  margin-right: 5px;
+}
+
+.next-button {
+  padding: 6px 40px;
+  border: 1px solid #1d234e;
+  font-size: 19px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  background-color: #1d234e;
+  border-radius: 10px;
+}
+.rent-label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #1d234e;
+}
+.money-sign {
+  display: flex;
+  align-items: center;
+}
+
+.money-sign-img {
+  margin-left: -30px;
+}
+
+/* rent payment section */
+
+.iti {
+  width: 100%;
+}
+
+.send-button {
+  padding: 6px 40px;
+  font-size: 19px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  background-color: #0047ff;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* footer section */
+.footer {
+  padding-top: 150px;
+}
+.footer-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1d234e;
+  line-height: 28px;
+  margin-bottom: 14px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  margin-top: 40px;
+}
+
+.footer-links a > i {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #1d234e;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.footer-input {
+  border-radius: 50px;
+  padding: 8px 10px;
+}
+
+.footer-button {
+  margin-left: -40px;
+  border-radius: 50px;
+  background-color: #1d234e;
+  color: #ffffff;
+  border: 0;
+}
+.footer-button i {
+  font-size: 20px;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1d234e;
+}
+
+.footer-menu p > a {
+  text-decoration: none;
+  color: #1d234e;
+  font-size: 18px;
+  font-weight: 300;
 }
