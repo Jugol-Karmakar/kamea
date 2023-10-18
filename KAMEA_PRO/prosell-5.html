@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Project</title>
+    <!-- css link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- style css link  -->
+    <link rel="stylesheet" href="../KAMEA_PRO/css/pro-sell.css" />
+
+    <!-- bootstrap icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- header section  -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+      <div class="container">
+        <div class="logo">
+          <img src="../images/logo.png" alt="" />
+          <a class="navbar-brand" href="#">Kamea</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <button type="button" class="nav-btn">Save & Edit</button>
+        </div>
+      </div>
+    </nav>
+    <!-- main  section-->
+    <main>
+      <section>
+        <div class="container pt-3 mb-4">
+          <h3 class="step-1">Step 4 - Photos and videos</h3>
+          <div class="row">
+            <h3 class="media-title">
+              You have nothing to worry about, in the gallery the image will
+              appear in its original size* 0/10
+            </h3>
+            <form class="row gy-3 gx-5">
+              <div id="file-upload-form">
+                <input id="file-upload" type="file" name="fileUpload" />
+                <p class="trash-icon"><i class="bi bi-trash"></i></p>
+                <label for="file-upload" id="file-drag">
+                  <p><i class="bi bi-plus-circle-fill drag-icon"></i></p>
+                  <p class="mb-0 drag-title">Drag here images and videos</p>
+                </label>
+              </div>
+              <div class="col-lg-12 pt-3">
+                <label for="inputtext3" class="form-label rent-label"
+                  >If you have a link for the Matterport 3D view, you can attach
+                  it to showcase the 3D view in the property gallery</label
+                >
+
+                <input
+                  type="text"
+                  id="inputtext3"
+                  class="form-control"
+                  placeholder="https://"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                />
+              </div>
+              <div
+                class="col-md-12 d-flex justify-content-between pt-5 pro_sellrent-btn"
+              >
+                <a href="prosell-4.html" type="button" class="">
+                  <i class="bi bi-chevron-left me-2"></i>Back
+                </a>
+                <a href="prosell-6.html" type="button" class="">
+                  Next <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer></footer>
+
+    <!-- bootstrap js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

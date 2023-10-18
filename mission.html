@@ -26,48 +26,72 @@
     <nav class="navbar navbar-expand-lg sticky-top bg-white">
       <div class="container">
         <div class="logo">
-          <img src="/images/logo.png" class="logo-img" alt="" />
-          <a class="navbar-brand" href="#">Kamea</a>
+          <img src="./images/logo.png" alt="" />
+          <a class="navbar-brand" href="index.html">Kamea</a>
         </div>
         <button
-          class="navbar-toggler ps-0"
+          class="navbar-toggler"
           type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarExample01"
-          aria-controls="navbarExample01"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="d-flex justify-content-start align-items-center">
-            <i class="fas fa-bars"></i>
-          </span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarExample01">
-          <ul class="navbar-nav mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link px-3" href="#!">Our services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-3" href="#!">Exceptional properties </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-3" href="#!">My Kemea </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link px-3" href="#!">About us</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex align-items-lg-center"
+          >
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-current="page"
+                href="/#"
+                >Our service</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="servicesell.html">Sell</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="servicerent.html">Rent out</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Value your property</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >My Kemea - assisted search services</a
+                  >
+                </li>
+              </ul>
             </li>
 
+            <li class="nav-item">
+              <a class="nav-link" href="#">Exceptional properties</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="mykamia.html">My Kemea</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link px-3 nav-button" href="#!"> Publish an ad </a>
             </li>
           </ul>
-        </div>
-        <div>
-          <ul class="navbar-nav flex-row">
-            <li class="nav-item">
-              <a class="nav-link px-3 nav-button" href="#!">Se conector</a>
-            </li>
-          </ul>
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link px-3 nav-button" href="#!">Se conector</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -76,8 +100,8 @@
     <main>
       <div class="container">
         <div class="row image-grid">
-          <div class="col-5">
-            <div style="width: 592px; height: 470px">
+          <div class="col-6">
+            <div>
               <img
                 style="width: 100%; height: 100%"
                 src="/images/mission1.png"
@@ -85,40 +109,40 @@
               />
             </div>
           </div>
-          <div class="col-7">
-            <div class="row g-3">
+          <div class="col-6">
+            <div class="row gy-5">
               <div class="col-6">
-                <div style="width: 300px; height: 231px">
+                <div>
                   <img
                     src="/images/mission2.png"
-                    style="width: 100%; height: 100%; object-fit: cover"
+                    style="width: 100%; height: 100%"
                     alt=""
                   />
                 </div>
               </div>
               <div class="col-6">
-                <div style="width: 300px; height: 231px">
+                <div>
                   <img
                     src="/images/mission2.png"
-                    style="width: 100%; height: 100%; object-fit: cover"
+                    style="width: 100%; height: 100%"
                     alt=""
                   />
                 </div>
               </div>
               <div class="col-6">
-                <div style="width: 300px; height: 231px">
+                <div>
                   <img
                     src="/images/mission2.png"
-                    style="width: 100%; height: 100%; object-fit: cover"
+                    style="width: 100%; height: 100%"
                     alt=""
                   />
                 </div>
               </div>
               <div class="col-6">
-                <div style="width: 300px; height: 231px">
+                <div>
                   <img
                     src="/images/mission2.png"
-                    style="width: 100%; height: 100%; object-fit: cover"
+                    style="width: 100%; height: 100%"
                     alt=""
                   />
                 </div>
@@ -130,7 +154,7 @@
 
       <div class="container mt-5">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-8 col-12">
             <div id="exTab2">
               <div class="panel panel-default">
                 <div class="panel-heading">
@@ -144,25 +168,25 @@
                   </div>
                 </div>
 
-                <div class="panel-body">
+                <div class="panel-body pb-sm-5 pb-lg-0">
                   <!-- tab 1 content  -->
                   <div class="tab-content">
                     <div class="tab-pane active" id="1">
                       <h4>Cottage - 23 Eliezer Yaffe Street, Ra'anana</h4>
-                      <div class="main-feature">
-                        <div class="feature">
+                      <div class="main-feature row">
+                        <div class="feature col-lg-2 col-md-3 col-12 mb-2">
                           <img src="/images/home-icon.png" alt="home-image" />
                           <p>530 m<sup>2</sup></p>
                         </div>
-                        <div class="feature">
+                        <div class="feature col-lg-2 col-md-3 col-12 mb-2">
                           <img src="/images/bed-icon.png" alt="bed-image" />
                           <p>7 Rooms</p>
                         </div>
-                        <div class="feature">
+                        <div class="feature col-lg-2 col-md-3 col-12 mb-2">
                           <img src="/images/shower-icon.png" alt="shower-img" />
                           <p>3 Floors</p>
                         </div>
-                        <div class="feature">
+                        <div class="feature col-lg-2 col-md-3 col-12 mb-2">
                           <img src="/images/car-icon.png" alt="car-img" />
                           <p>Parkings</p>
                         </div>
@@ -382,14 +406,131 @@
                     </div>
                     <!-- tab 2 content  -->
                     <div class="tab-pane" id="2">
-                      <h4>Cottage - 23 Eliezer Yaffe Street, Ra'anana</h4>
+                      <div class="card shadow border-0 mt-4">
+                        <div class="card-body p-4 pt-2">
+                          <h4 class="finance-title">
+                            Combien me coûtera ce bien chaque mois ?
+                          </h4>
+
+                          <div class="row pt-4">
+                            <div class="col-lg-6 mb-3">
+                              <label
+                                for="inputtext1"
+                                class="form-label rent-label"
+                                >Prix du bien</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputtext1"
+                                value="585 000"
+                              />
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                              <label
+                                for="inputtext1"
+                                class="form-label rent-label"
+                                >Frais de notaire (8% ancien)</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputtext1"
+                                value="42 021"
+                                disabled
+                                readonly
+                              />
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                              <label
+                                for="inputtext1"
+                                class="form-label rent-label"
+                                >Apport (30% recommandé)</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputtext1"
+                                value="175 500"
+                              />
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                              <label
+                                for="inputtext1"
+                                class="form-label rent-label"
+                                >Durée du prêt - Taux du crédit 4.04%</label
+                              >
+                              <div class="slider">
+                                <input
+                                  type="range"
+                                  min="0"
+                                  max="100"
+                                  value="50"
+                                  id="fader"
+                                  step="20"
+                                  list="volsettings"
+                                /><datalist id="volsettings">
+                                  <option>0</option>
+                                  <option>20</option>
+                                  <option>40</option>
+                                </datalist>
+                              </div>
+                              <div class="range-value">
+                                <span>7 ans</span><span>10 ans</span
+                                ><span>25 ans</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="donut-item">
+                            <div class="donut instalment3">
+                              <div class="donut-default"></div>
+                              <div class="donut-line"></div>
+                              <div class="donut-text">
+                                <p class="mb-0">Estimation</p>
+                                <p class="mb-0">2 756 €</p>
+                                <p class="mb-0">par mois<sup>1</sup></p>
+                              </div>
+                              <div class="donut-case"></div>
+                            </div>
+                            <div>
+                              <div class="d-flex align-items-center pb-2">
+                                <div class="blue"></div>
+                                <h3 class="donut-mark">
+                                  Montant emprunté
+                                  <i class="bi bi-question-circle"></i>
+                                </h3>
+                              </div>
+                              <div class="d-flex align-items-center pb-2">
+                                <div class="cyan"></div>
+                                <h3 class="donut-mark">
+                                  Coût des intérêts
+                                  <i class="bi bi-question-circle"></i>
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="finance_last-text py-4">
+                            <p>(1) <span>Simulation non contractuelle</span></p>
+                            <p>
+                              (2)
+                              <span
+                                >Sous réserve d'acceptation de votre dossier de
+                                prêt immobilier par votre Caisse régionale de
+                                Crédit Agricole, prêteur.</span
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-12">
             <div class="card shadow border-0">
               <div class="card-body p-4">
                 <h5 class="card-title">22 700 000 ₪</h5>
@@ -427,7 +568,7 @@
                     </form>
                     <div class="number-button">
                       <button type="submit" class="show-number-button">
-                        Show phone number
+                        <i class="bi bi-telephone"></i> Show phone number
                       </button>
                       <div class="office-link">
                         <a href="">To the office website</a>

@@ -1,0 +1,205 @@
+.dropdown-toggle::after {
+  display: none;
+}
+.text-decoration-none {
+  text-decoration: none !important;
+}
+/* Font Awesome Icons have variable width. Added fixed width to fix that.*/
+.icon-width {
+  width: 2rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo a {
+  font: 30px;
+  font-weight: 500;
+  margin-left: 3px;
+}
+
+.nav_user-button {
+  outline: none;
+  border: 1px solid #1d234e;
+  padding: 6px 15px;
+  border-radius: 50px;
+  background-color: #ffffff;
+}
+
+.nav_user-button .bi-list {
+  font-size: 20px;
+  color: #1d234e;
+}
+
+.nav_user-button .bi-person-circle {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #1d234e;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 14px;
+}
+.navbar-nav .nav-item a {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(29, 35, 78, 1);
+}
+
+.navbar {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(221, 221, 221, 1);
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #1d234e;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+.navbar-en {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  padding-right: 18px;
+  color: #1d234e;
+}
+
+/* kamera pro title */
+.pro_top-title {
+  background-color: #f9f8f9;
+  padding: 10px 0;
+}
+
+.pro-title {
+  font-size: 25px;
+  color: #1d234e;
+  font-weight: 500;
+  line-height: 41px;
+}
+
+.input-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.bi-search {
+  position: absolute;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #1d234e;
+}
+
+.top-input {
+  padding: 6px;
+  padding-left: 38px;
+  border-width: 1px;
+  border-color: #1d234e;
+  border-radius: 50px;
+}
+.pro_home-btn {
+  border: 1px solid #1d234e;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 8px 20px;
+  margin-right: 5px;
+  color: #1d234e;
+}
+
+.pro_home-btn:hover {
+  background-color: #1d234e;
+  color: white;
+}
+
+.finish-btn {
+  border: 1px solid #1d234e;
+  padding: 6px 15px;
+  color: #1d234e;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.finish-btn:hover {
+  background-color: #1d234e;
+  color: #ffffff;
+  border-color: #1d234e;
+}
+
+.create-btn {
+  padding: 6px 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.create-btn i {
+  font-size: 16px;
+  color: #ffffff;
+  margin-right: 8px;
+}
+
+/* table  */
+.table th {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  color: #717171;
+}
+
+.table td,
+th {
+  vertical-align: middle;
+}
+
+.table td {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1d234e;
+  line-height: 18px;
+}
+
+.terminal-btn {
+  padding: 6px 14px;
+  color: #1d234e;
+  border: 1px solid #1d234e;
+  border-radius: 10px;
+}
+.terminal-btn:hover {
+  background-color: #1d234e;
+  border-color: #1d234e;
+  color: #ffffff;
+}
+
+.color-icon {
+  color: #0047ff;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.non-coloricon {
+  color: #dddddd;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.Modify-td {
+  text-decoration: underline;
+}
+
+.Modify-td i {
+  font-size: 18px;
+  color: #1d234e;
+  margin-left: 8px;
+}

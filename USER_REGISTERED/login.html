@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Project</title>
+    <!-- css link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- style css link  -->
+    <link rel="stylesheet" href="../css/login.css" />
+
+    <!-- bootstrap icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- header section  -->
+
+    <!-- main  section-->
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 login_left-side">
+            <div class="login-info">
+              <h2>
+                By entering in your Kemea <br />
+                account...
+              </h2>
+              <p><span>1</span>Our hunters take care of everything for you.</p>
+              <p>
+                <span>2</span>The consultation is free and without obligation.
+              </p>
+              <p>
+                <span>3</span>We accompany you until the signing of the deed
+              </p>
+              <p><span>4</span>We give you access to the Off Market.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="navigate-signup">
+              <select
+                class="form-select login-select"
+                aria-label="Default select example"
+              >
+                <option selected>En</option>
+                <option value="1">Ban</option>
+              </select>
+              <a href="/signup.html">Sign up</a>
+            </div>
+            <div class="form">
+              <div class="login-title">
+                <h2>
+                  Login <br />
+                  & Registration
+                </h2>
+                <p>
+                  Log in or create your account to find <br />
+                  Kemea opportunities
+                </p>
+              </div>
+              <form class="loign-form">
+                <!-- Email input -->
+                <div class="mb-3">
+                  <label for="inputEmai" class="form-label input-name"
+                    >E-mail</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control input"
+                    id="inputEmail"
+                    placeholder="johndoe@mail.com"
+                  />
+                </div>
+                <div class="mb-2">
+                  <label for="InputPassword" class="form-label input-name"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control input"
+                    id="InputPassword"
+                    placeholder="********"
+                  />
+                </div>
+
+                <div class="d-flex justify-content-end forget-pass">
+                  <a href="#!">Forgot password?</a>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary login-button">
+                  Log in
+                </button>
+
+                <div class="divider d-flex justify-content-center my-3">
+                  <p class="text-center mx-3 mb-0">or</p>
+                </div>
+
+                <div class="social-login">
+                  <a class="" href="#!">
+                    <i class="bi bi-google"></i>Continue with Google
+                  </a>
+                  <a class="" href="#!">
+                    <i class="bi bi-apple"></i>Continue with Apple</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- bootstrap js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
