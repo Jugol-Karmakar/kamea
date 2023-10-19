@@ -222,3 +222,15 @@ input[type="file"] {
   margin-top: 14px;
   margin-left: 255px;
 }
+
+.button-group {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.button-group-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  padding: 6px 20px;
+}

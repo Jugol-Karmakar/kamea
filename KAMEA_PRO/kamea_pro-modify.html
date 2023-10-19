@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Project</title>
+    <!-- css link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- style css link  -->
+    <link rel="stylesheet" href="../KAMEA_PRO/css/kamea_pro-modify.css" />
+
+    <!-- bootstrap icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body style="background-color: #ebebeb">
+    <!-- header section  -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+      <div class="container">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+          <a class="navbar-brand" href="#">Kamea</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Plan</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile Page</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <button type="button" class="nav_user-button">
+              <i class="bi bi-list"></i><i class="bi bi-person-circle"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- main  section-->
+    <main>
+      <section class="container">
+        <div class="pt-2 pb-4">
+          <a href="home.html" class="go_back-btn"
+            ><i class="bi bi-chevron-left me-2"></i>Go Back</a
+          >
+        </div>
+      </section>
+      <section class="container">
+        <div class="modify-top">
+          <div>
+            <h3 class="mb-0">Cottage - Eliezer Yaffe Street, Ra'anana</h3>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center px-3">
+              <img src="../images/pro-red.png" class="me-2" alt="" />
+              <p class="mb-0">Masquée</p>
+            </div>
+            <div class="d-flex align-items-center px-3">
+              <img src="../images/pro-frame.png" class="me-2" alt="" />
+              <p class="mb-0">Boost activée</p>
+            </div>
+            <div class="ps-3">
+              <button type="button" class="btn btn-outline-primary">
+                Prévisualiser l'annonce
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h5>Modifier l'annonce<i class="bi bi-chevron-down"></i></h5>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-8">
+              <div class="d-flex align-items-center justify-content-between">
+                <p>Photos</p>
+                <p>Modifier<i class="bi bi-chevron-right"></i></p>
+              </div>
+              <div class="d-flex align-items-center img-grp pt-2 pb-4">
+                <div style="width: 200px; height: 140px" class="mx-1">
+                  <img
+                    src="../images/pro1.png"
+                    style="width: 100%; height: 100%"
+                    alt=""
+                  />
+                </div>
+                <div style="width: 200px; height: 140px" class="mx-1">
+                  <img
+                    src="../images/pro2.png"
+                    style="width: 100%; height: 100%"
+                    alt=""
+                  />
+                </div>
+                <div style="width: 200px; height: 140px" class="mx-1">
+                  <img
+                    src="../images/pro3.png"
+                    style="width: 100%; height: 100%"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style="width: 200px; height: 140px"
+                  class="mx-1 opacity-25"
+                >
+                  <img
+                    src="../images/pro3.png"
+                    style="width: 100%; height: 100%"
+                    alt=""
+                  />
+                </div>
+                <p class="photos">21 Photos</p>
+              </div>
+              <hr />
+              <div class="modify-property">
+                <h3>Informations de base sur le logement</h3>
+                <div class="modify-flex">
+                  <p class="mb-0">Description du logement</p>
+                  <p class="mb-0">Modifier</p>
+                </div>
+                <div class="modify-details">
+                  <p>
+                    Appartement Triplex, 260m2, à Jérusalem, situé au dernier
+                    étage d'une petite copropriété . <br />
+                    Emplacement central et très calme.
+                  </p>
+                  <p>
+                    10 mins en voiture ou en transports de la vieille ville, du
+                    Kotel et de la Mamilla. <br />
+                    A quelques pas de la zone de divertissement "Hatahana", où
+                    se trouvent boutiques, restaurants et du quartier de
+                    <br />German…
+                  </p>
+                </div>
+                <p class="plus-text">Afficher plus</p>
+                <div
+                  class="py-3 d-flex align-items-center justify-content-between modify-flex"
+                >
+                  <p class="mb-0">Statut de l'annonce</p>
+                  <p class="mb-0">Modifier</p>
+                </div>
+                <div class="d-flex">
+                  <div class="me-2">
+                    <img src="../images/pro-red.png" alt="" />
+                  </div>
+                  <p class="property-text">
+                    Masquée - Votre annonce n'apparaît pas dans les résultats de
+                    recherche et les voyageurs ne peuvent pas réserver le
+                    logement.
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div class="about-property">
+                <h4>About this poperty</h4>
+                <div class="about">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="about-items">
+                        <p>Type of propery</p>
+                        <p>Cottage</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="about-items">
+                        <p>Number of floors</p>
+                        <p>5</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="about-items">
+                        <p>Total surface</p>
+                        <p>530 m<sup>2</sup></p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="about-items">
+                        <p>Propery condition</p>
+                        <p>Revovated</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="about-items">
+                        <p>Number of rooms</p>
+                        <p>5</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="about-items">
+                        <p>Entry of date</p>
+                        <p>01/12/23</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="about-items">
+                        <p>City</p>
+                        <p>Ra'anana</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="about-items">
+                        <p>Ra'anana</p>
+                        <p>1</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="about-items">
+                        <p>Entry condition</p>
+                        <p>Flexible</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="about-items">
+                        <p>Address</p>
+                        <p>23 Eliezer Yaffe Street</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="about-items">
+                        <p>Ground/covered car park</p>
+                        <p>2</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="about-items">
+                        <p>Price</p>
+                        <p>22 700 000 ₪</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="about-items">
+                        <p>Area</p>
+                        <p>South</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="about-items">
+                        <p>Surface build</p>
+                        <p>330 m<sup>2</sup></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="house-main-feature">
+                <h4>What this house offers</h4>
+                <div class="house-feature">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="house-feature-item">
+                        <img
+                          src="../images/elevator-icon.png"
+                          alt="home-image"
+                        />
+                        <p>Elevators</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="house-feature-item">
+                        <img
+                          src="../images/painting-roller-icon.png"
+                          alt="home-image"
+                        />
+                        <p>Renovated</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="house-feature-item">
+                        <img
+                          src="../images/storage-box-icon.png"
+                          alt="home-image"
+                        />
+                        <p>Storage</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="house-feature-item">
+                        <img
+                          src="../images/furniture-icon.png"
+                          alt="home-image"
+                        />
+                        <p>Furnitures included</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="house-feature-item">
+                        <img
+                          src="../images/water-tap-icon.png"
+                          alt="home-image"
+                        />
+                        <p>Kosher kitchen</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="house-feature-item">
+                        <img
+                          src="../images/water-heater-icon.png"
+                          alt="home-image"
+                        />
+                        <p>Water heater</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="house-feature-item">
+                        <img
+                          src="../images/personal-icon.png"
+                          alt="home-image"
+                        />
+                        <p>Personal Mazgan</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="pb-3">
+                <div class="modify-flex">
+                  <p class="mb-0">Contact</p>
+                  <p class="mb-0">Modifier</p>
+                </div>
+                <div class="d-flex align-items-center modify-contact">
+                  <p class="mb-0">David</p>
+                  <p class="mb-0 ps-5">+972 (0)54 6553299</p>
+                </div>
+              </div>
+              <hr />
+              <div>
+                <p class="des-text">Des suggestions ?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer>
+      <section
+        class="footer"
+        style="
+          background-image: url(/images/kamia/footer-bg.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: top;
+        "
+      >
+        <div class="container text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-6">
+              <!-- Content -->
+              <h3 class="footer-title">Subscribe to our newsletter</h3>
+              <div class="">
+                <div class="form-outline footer-form">
+                  <input
+                    type="text"
+                    id="form1"
+                    class="form-control footer-input"
+                    placeholder="Your email"
+                  />
+                  <button type="button" class="footer-button">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </button>
+                </div>
+                <div class="footer-links">
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 footer-menu">
+              <!-- Links -->
+              <h6 class="footer-title">Services</h6>
+              <p>
+                <a href="#!" class="text-reset">Buy</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Rent</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Sell</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">My kamea</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Kamea pro</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 footer-menu">
+              <!-- Links -->
+              <h6 class="footer-title">Legal</h6>
+              <p>
+                <a href="#!" class="text-reset">Terms of Service</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Privacy Policy</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Cookies Policy</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Legal Notice</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+          <hr class="footer-hr" />
+          <div class="text-left pb-4">
+            <div class="footer-logo">
+              <img src="/images/logo.png" alt="logo" />
+              <a href="">© kemea 2023</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- bootstrap js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
