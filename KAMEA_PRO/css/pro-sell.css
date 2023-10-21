@@ -255,3 +255,22 @@ input[type="file"] {
   border-left: 0;
   border-radius: 0px 10px 10px 0;
 }
+
+/* feature item */
+.house_feature-item {
+  display: flex;
+  align-items: center;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 8px 30px;
+  margin-bottom: 25px;
+  text-wrap: nowrap;
+}
+
+.house_feature-item p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #1d234e;
+  font-weight: 400;
+  margin-left: 8px;
+}
